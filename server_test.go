@@ -14,7 +14,7 @@ func TestWebServer(t *testing.T) {
 
 	t.Run("Retourne le site web", func(t *testing.T) {
 		got := response.Body.String()
-		want := "20"
+		want := "Hello"
 
 		if got != want {
 			t.Errorf("On a %q, On voudrait %q", got, want)
